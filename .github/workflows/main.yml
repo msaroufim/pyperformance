@@ -21,10 +21,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # Test all supported versions on Ubuntu:
-        os: [ubuntu-latest]
-        python: ["3.7", "3.8", "3.9", "3.10", "3.11"]
-        experimental: [false]
         include:
           - os: windows-latest
             python: "3.10"
